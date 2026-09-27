@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+
+    <!-- Navigation -->
+    <string name="nav_forecast">Forecast</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Forecast Screen -->
+    <string name="forecast_title">Weather Forecast</string>
+    <string name="loading">Loading…</string>
+    <string name="error_loading">Failed to load weather data</string>
+    <string name="retry">Retry</string>
+    <string name="offline_data">Showing cached data (offline)</string>
+    <string name="no_data">No data available</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <!-- Day names -->
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+
+    <!-- Details -->
+    <string name="details_title">Detailed Forecast</string>
+    <string name="temperature">Temperature</string>
+    <string name="temp_min">Min Temp</string>
+    <string name="temp_max">Max Temp</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="wind_direction">Wind Direction</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="precipitation_probability">Precipitation Probability</string>
+    <string name="feels_like">Feels Like</string>
+    <string name="celsius_symbol">°C</string>
+    <string name="percent_symbol">%</string>
+    <string name="mmhg_symbol">mmHg</string>
+    <string name="ms_symbol">m/s</string>
+
+    <!-- Wind directions -->
+    <string name="wind_n">North</string>
+    <string name="wind_ne">Northeast</string>
+    <string name="wind_e">East</string>
+    <string name="wind_se">Southeast</string>
+    <string name="wind_s">South</string>
+    <string name="wind_sw">Southwest</string>
+    <string name="wind_w">West</string>
+    <string name="wind_nw">Northwest</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_city">City</string>
+    <string name="settings_days">Number of forecast days</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_language">Language</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="lang_english">English</string>
+    <string name="lang_russian">Russian</string>
+    <string name="days_suffix">days</string>
+    <string name="city_moscow">Moscow</string>
+    <string name="city_novosibirsk">Novosibirsk</string>
+    <string name="city_saint_petersburg">Saint Petersburg</string>
+    <string name="city_ekaterinburg">Yekaterinburg</string>
+    <string name="city_kazan">Kazan</string>
+    <string name="city_krasnoyarsk">Krasnoyarsk</string>
+</resources>

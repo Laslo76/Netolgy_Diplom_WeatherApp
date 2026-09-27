@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Погода</string>
+
+    <!-- Navigation -->
+    <string name="nav_forecast">Прогноз</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Forecast Screen -->
+    <string name="forecast_title">Прогноз погоды</string>
+    <string name="loading">Загрузка…</string>
+    <string name="error_loading">Не удалось загрузить данные о погоде</string>
+    <string name="retry">Повторить</string>
+    <string name="offline_data">Отображаются кэшированные данные (офлайн)</string>
+    <string name="no_data">Нет данных</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+
+    <!-- Day names -->
+    <string name="monday">Пн</string>
+    <string name="tuesday">Вт</string>
+    <string name="wednesday">Ср</string>
+    <string name="thursday">Чт</string>
+    <string name="friday">Пт</string>
+    <string name="saturday">Сб</string>
+    <string name="sunday">Вс</string>
+
+    <!-- Details -->
+    <string name="details_title">Подробный прогноз</string>
+    <string name="temperature">Температура</string>
+    <string name="temp_min">Мин. температура</string>
+    <string name="temp_max">Макс. температура</string>
+    <string name="humidity">Влажность</string>
+    <string name="pressure">Давление</string>
+    <string name="wind">Ветер</string>
+    <string name="wind_speed">Скорость ветра</string>
+    <string name="wind_direction">Направление ветра</string>
+    <string name="precipitation">Осадки</string>
+    <string name="precipitation_probability">Вероятность осадков</string>
+    <string name="feels_like">Ощущается как</string>
+    <string name="celsius_symbol">°C</string>
+    <string name="percent_symbol">%</string>
+    <string name="mmhg_symbol">мм рт.ст.</string>
+    <string name="ms_symbol">м/с</string>
+
+    <!-- Wind directions -->
+    <string name="wind_n">Северный</string>
+    <string name="wind_ne">Северо-восточный</string>
+    <string name="wind_e">Восточный</string>
+    <string name="wind_se">Юго-восточный</string>
+    <string name="wind_s">Южный</string>
+    <string name="wind_sw">Юго-западный</string>
+    <string name="wind_w">Западный</string>
+    <string name="wind_nw">Северо-западный</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_city">Город</string>
+    <string name="settings_days">Количество дней прогноза</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_language">Язык</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_system">Системная</string>
+    <string name="lang_english">Английский</string>
+    <string name="lang_russian">Русский</string>
+    <string name="days_suffix">дней</string>
+    <string name="city_moscow">Москва</string>
+    <string name="city_novosibirsk">Новосибирск</string>
+    <string name="city_saint_petersburg">Санкт-Петербург</string>
+    <string name="city_ekaterinburg">Екатеринбург</string>
+    <string name="city_kazan">Казань</string>
+    <string name="city_krasnoyarsk">Красноярск</string>
+</resources>
