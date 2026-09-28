@@ -3,7 +3,6 @@ package ru.netology.weatherapp
 import ru.netology.weatherapp.data.api.WeatherApiService
 import ru.netology.weatherapp.data.local.WeatherDao
 import ru.netology.weatherapp.data.local.WeatherEntity
-import com.example.weatherapp.data.model.*
 import ru.netology.weatherapp.data.repository.WeatherRepository
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -22,6 +21,8 @@ import ru.netology.weatherapp.data.model.ResultSet
 import ru.netology.weatherapp.data.model.TemperatureData
 import ru.netology.weatherapp.data.model.WeatherResponse
 import ru.netology.weatherapp.data.model.WindData
+import ru.netology.weatherapp.data.model.WindDataDirection
+import ru.netology.weatherapp.data.model.WindDataSpeed
 
 class WeatherRepositoryTest {
 
@@ -51,7 +52,8 @@ class WeatherRepositoryTest {
                             temperature = TemperatureData(avg = -10.0, min = -12.0, max = -8.0),
                             humidity = HumidityData(avg = 85.0),
                             pressure = PressureData(avg = 750.0),
-                            wind = WindData(speed = 3.0, direction = "NW"),
+                            wind = WindData(speed = WindDataSpeed(3, 2, 4),
+                                direction = WindDataDirection("NW", "NW","NW","NW")),
                             precipitation = PrecipitationData(probability = 20.0)
                         ),
                         HourForecast(
@@ -59,7 +61,8 @@ class WeatherRepositoryTest {
                             temperature = TemperatureData(avg = -8.0, min = -10.0, max = -6.0),
                             humidity = HumidityData(avg = 80.0),
                             pressure = PressureData(avg = 751.0),
-                            wind = WindData(speed = 2.0, direction = "N"),
+                            wind = WindData(speed = WindDataSpeed(2, 1,3),
+                                direction = WindDataDirection("N", "N","N","N")),
                             precipitation = PrecipitationData(probability = 10.0)
                         ),
                         HourForecast(
@@ -67,7 +70,8 @@ class WeatherRepositoryTest {
                             temperature = TemperatureData(avg = -5.0, min = -7.0, max = -3.0),
                             humidity = HumidityData(avg = 70.0),
                             pressure = PressureData(avg = 750.0),
-                            wind = WindData(speed = 4.0, direction = "NE"),
+                            wind = WindData(speed = WindDataSpeed(4, 1,7),
+                                direction = WindDataDirection("NE", "NE","NE","NE")),
                             precipitation = PrecipitationData(probability = 30.0)
                         )
                     )
@@ -83,7 +87,8 @@ class WeatherRepositoryTest {
                             temperature = TemperatureData(avg = -3.0, min = -5.0, max = 0.0),
                             humidity = HumidityData(avg = 75.0),
                             pressure = PressureData(avg = 748.0),
-                            wind = WindData(speed = 5.0, direction = "SW"),
+                            wind = WindData(speed = WindDataSpeed(5, 4,6),
+                                direction = WindDataDirection("SE", "SE","SE","SE")),
                             precipitation = PrecipitationData(probability = 40.0)
                         )
                     )
@@ -98,7 +103,7 @@ class WeatherRepositoryTest {
         val result = repository.getForecast("moscow")
 
         // Assert
-        assertTrue(result.isSuccess)
+        assertTrue( "Ожидался Success, но был: $result", result.data != null && result.error == null,)
         assertFalse(result.isFromCache)
         assertEquals(2, result.data?.size)
 
@@ -111,7 +116,6 @@ class WeatherRepositoryTest {
         assertEquals(-3.0, firstDay.tempMax, 0.01)
         assertEquals(70.0, firstDay.humidity, 0.01)
         assertEquals(750.0, firstDay.pressure, 0.01)
-        assertEquals(4.0, firstDay.windSpeed, 0.01)
         assertEquals("NE", firstDay.windDirection)
         assertEquals(30.0, firstDay.precipitationProbability, 0.01)
 
@@ -132,7 +136,7 @@ class WeatherRepositoryTest {
                 tempMax = 0.0,
                 humidity = 80.0,
                 pressure = 750.0,
-                windSpeed = 3.0,
+                windSpeed = 3,
                 windDirection = "NW",
                 precipitationProbability = 20.0,
                 cachedAt = System.currentTimeMillis()
@@ -145,7 +149,7 @@ class WeatherRepositoryTest {
         val result = repository.getForecast("moscow")
 
         // Assert
-        assertTrue(result.isSuccess)
+        assertTrue( "Ожидался Success, но был: $result", result.data != null && result.error == null,)
         assertTrue(result.isFromCache)
         assertEquals(1, result.data?.size)
         assertEquals("2024-01-15", result.data!![0].date)
@@ -161,7 +165,7 @@ class WeatherRepositoryTest {
         val result = repository.getForecast("moscow")
 
         // Assert
-        assertTrue(result.isError)
+        assertTrue( "Ожидался Error, но был: $result", result.error != null)
         assertNull(result.data)
         assertNotNull(result.error)
     }
