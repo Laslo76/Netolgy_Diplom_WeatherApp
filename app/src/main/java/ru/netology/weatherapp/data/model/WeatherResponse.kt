@@ -78,7 +78,7 @@ data class PrecipitationData(
 )
 
 /**
- * Данные по городам для:
+ * Данные по городам для запроса:
  * GET http://pogoda.ngs.ru/api/v1/cities
  */
 data class CitiesResponse(
