@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\96368d82463f23acb7751f66a0d02a2f\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\Home\.gradle\caches\transforms-3\080c5f5350c61562cec1ef898cdc2bb9\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Home\.gradle\caches\transforms-3\2a313aec95a9cf99436ea6138a5f44a3\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
@@ -72,27 +72,26 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Home\.gradle\cache
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Home\.gradle\caches\transforms-3\2261f3e61e2df86085e5bdf8526d7658\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.49] C:\Users\Home\.gradle\caches\transforms-3\7638cff2297e50073170aa7ee75a476b\transformed\dagger-lint-aar-2.49\AndroidManifest.xml:16:1-19:12
 	package
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:4:5-51
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:9:5-29:19
-INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:9:5-29:19
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:8:5-28:19
+INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:8:5-28:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] C:\Users\Home\.gradle\caches\transforms-3\e0dc34d754d24504015050eb9f4ba89c\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.1] C:\Users\Home\.gradle\caches\transforms-3\e0dc34d754d24504015050eb9f4ba89c\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.6.1] C:\Users\Home\.gradle\caches\transforms-3\cf94a2488188187dbde3d301585da113\transformed\ui-test-manifest-1.6.1\AndroidManifest.xml:22:5-26:19
@@ -116,41 +115,41 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Home\.gradle\cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\Home\.gradle\caches\transforms-3\112adeb186e5bdc36ed4036706b49c21\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:11:9-35
-	android:theme
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:16:9-48
-	android:usesCleartextTraffic
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:17:9-44
-	android:name
 		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:10:9-35
-activity#ru.netology.weatherapp.MainActivity
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:20:9-28:20
-	android:exported
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:23:13-52
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:15:9-48
+	android:usesCleartextTraffic
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:21:13-63
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:9:9-35
+activity#ru.netology.weatherapp.MainActivity
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:19:9-27:20
+	android:exported
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:21:13-36
+	android:theme
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:22:13-52
+	android:name
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:20:13-63
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Android\Projects\WeatherApp\app\src\main\AndroidManifest.xml

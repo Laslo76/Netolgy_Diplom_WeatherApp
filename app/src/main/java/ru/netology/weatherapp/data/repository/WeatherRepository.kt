@@ -1,6 +1,5 @@
 package ru.netology.weatherapp.data.repository
 
-import android.util.Log
 import ru.netology.weatherapp.data.api.WeatherApiService
 import ru.netology.weatherapp.data.local.WeatherDao
 import ru.netology.weatherapp.data.local.WeatherEntity
@@ -34,9 +33,6 @@ class WeatherRepository @Inject constructor(
             dao.insertAll(entities)
             Resource.Success(data = entities, isFromCache = false)
         } catch (e: Exception) {
-            // Логируем реальную причину
-            Log.e("WeatherRepo", "Ошибка загрузки погоды для города $city", e)
-
             val cached = dao.getForecastForCity(city)
             if (cached.isNotEmpty()) {
                 Resource.Success(data = cached, isFromCache = true)

@@ -129,7 +129,7 @@ class WeatherRepositoryTest {
         // Arrange
         val cachedData = listOf(
             WeatherEntity(
-                date = "2024-01-15",
+                date = "2026-09-15",
                 city = "moscow",
                 tempAvg = -5.0,
                 tempMin = -10.0,
@@ -152,7 +152,7 @@ class WeatherRepositoryTest {
         assertTrue( "Ожидался Success, но был: $result", result.data != null && result.error == null,)
         assertTrue(result.isFromCache)
         assertEquals(1, result.data?.size)
-        assertEquals("2024-01-15", result.data!![0].date)
+        assertEquals("2026-09-15", result.data!![0].date)
     }
 
     @Test
