@@ -74,5 +74,5 @@ class WeatherRepository @Inject constructor(
         }
     }
 
-    suspend fun getLastCacheTime(city: String): Long? = dao.getLastCacheTime(city)
+    //suspend fun getLastCacheTime(city: String): Long? = dao.getLastCacheTime(city)
 }
