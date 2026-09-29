@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.weatherapp.WeatherRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-28T09:15:10" hostname="NNOTE" time="0.828">
+<testsuite name="ru.netology.weatherapp.WeatherRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-29T17:36:23" hostname="NNOTE" time="1.317">
   <properties/>
-  <testcase name="mapResponseToEntities null forecasts returns empty list" classname="ru.netology.weatherapp.WeatherRepositoryTest" time="0.828"/>
+  <testcase name="getForecast network failure no cache returns error" classname="ru.netology.weatherapp.WeatherRepositoryTest" time="1.317"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

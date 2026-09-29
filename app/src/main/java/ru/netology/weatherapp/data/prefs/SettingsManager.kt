@@ -15,7 +15,7 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(na
 data class AppSettings(
     val city: String = "moscow",
     val forecastDays: Int = 7,
-    val themeMode: String = "system",
+    val themeMode: String = "light",
     val language: String = "system"
 )
 
@@ -41,15 +41,12 @@ class SettingsManager @Inject constructor(
         context.dataStore.edit { it[CITY_KEY] = city }
     }
 
+
     suspend fun setForecastDays(days: Int) {
         context.dataStore.edit { it[DAYS_KEY] = days }
     }
 
     suspend fun setThemeMode(mode: String) {
         context.dataStore.edit { it[THEME_KEY] = mode }
-    }
-
-    suspend fun setLanguage(lang: String) {
-        context.dataStore.edit { it[LANGUAGE_KEY] = lang }
     }
 }

@@ -10,8 +10,11 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import ru.netology.weatherapp.data.prefs.AppSettings
 import javax.inject.Inject
 
 data class ForecastUiState(
@@ -33,14 +36,20 @@ class ForecastViewModel @Inject constructor(
     val uiState: StateFlow<ForecastUiState> = _uiState.asStateFlow()
 
     init {
-        loadForecast()
+        viewModelScope.launch {
+            // Подписываемся на ВСЕ изменения настроек (город, дни и т.д.)
+            settingsManager.settingsFlow
+                .collect { settings ->
+                    // Как только настройки изменились — запускаем загрузку
+                    loadForecast(settings)
+                }
+        }
     }
 
-    fun loadForecast() {
+    private fun loadForecast(settings: AppSettings) {
         viewModelScope.launch {
             _uiState.value = _uiState.value.copy(isLoading = true, error = null)
 
-            val settings = settingsManager.settingsFlow.first()
             val city = settings.city
             val days = settings.forecastDays
 
@@ -64,6 +73,13 @@ class ForecastViewModel @Inject constructor(
                     )
                 }
             }
+        }
+    }
+
+    fun refresh() {
+        viewModelScope.launch {
+            val settings = settingsManager.settingsFlow.first()
+            loadForecast(settings)
         }
     }
 }

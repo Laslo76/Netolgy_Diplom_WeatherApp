@@ -74,7 +74,7 @@ fun ForecastScreen(
                             color = MaterialTheme.colorScheme.error
                         )
                         Spacer(modifier = Modifier.height(16.dp))
-                        Button(onClick = { viewModel.loadForecast() }) {
+                        Button(onClick = { viewModel.refresh() }) {
                             Text(stringResource(R.string.retry))
                         }
                     }
